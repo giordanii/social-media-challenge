@@ -33,10 +33,31 @@ section#iphone {
     background-repeat: no-repeat;
 }
 
-iframe#tela {
+iframe#screen {
     position: relative;
     top: 80px;
     left: 22px;
     width: 268px;
     height: 471px;
+}
+
+section#socials {
+    text-align: right;
+}
+
+/* Do not want to work with flexbox or grid */
+section#socials img {
+    width: 50px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.686);
+    box-sizing: border-box;
+}
+
+section#socials img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.853);
+    transform: translate(-5px, -5px);
+    transition: transform 0.15s, border 0.2s;
+    box-shadow: 5px 5px 10px black;
 }
