@@ -12,6 +12,7 @@ html, body {
     background-color: black;
 }
 body {
+    padding-top: 35px;
     background: url(./imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -42,14 +43,14 @@ iframe#screen {
 }
 
 section#socials {
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
 }
 
-/* Do not want to work with flexbox or grid */
 section#socials img {
     width: 50px;
-    margin-top: 30px;
-    margin-right: 10px;
     border-radius: 50px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.686);
     box-sizing: border-box;
@@ -57,7 +58,23 @@ section#socials img {
 
 section#socials img:hover {
     border: 2px solid rgba(255, 255, 255, 0.853);
-    transform: translate(-5px, -5px);
+    transform: translate(5px, 5px);
     transition: transform 0.15s, border 0.2s;
     box-shadow: 5px 5px 10px black;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
